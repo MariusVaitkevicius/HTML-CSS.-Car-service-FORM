@@ -1,0 +1,380 @@
+// Html.................................................................................................................................................. 
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center"><strong>"Autoserviso" anketa</strong></h1>
+    <p id="description" class="description text-center"><strong>
+      Kuo serga jūsų automobilis?</strong>
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <p class="miestas"><strong>Miestas: </strong></p>
+      <label id="region" for="region">
+      <input type="checkbox" checked="checked" value="miestas1"/><strong>Vilnius</strong></label>
+      <label id="region2" for="region2">
+        <input type="checkbox" value="miestas2"/>
+        <strong>Kaunas</strong>
+        </label>
+        </div>
+      <label id="name-label" for="name"><strong>Vardas</strong></label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Įveskite savo vardą"
+        required
+      />
+    <div class="form-group">
+      <label id="email-label" for="email"><strong>Email</strong></label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Įveskite savo Emailą"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+             ><strong>Automobilio pagaminimo data</strong></label>
+      <input 
+             type="number"
+             name="Automobilio pagaminimo data"
+             id="number"
+             class="form-control"
+             min="2000"
+             max="2021"
+             placeholder="Įveskite metus"
+             required
+             /></div>
+      <div class="form-group">
+        <label id="Automobilio-markė" for="Automobilio-markė"><strong>Automobilio markė</strong></label>
+        <select name="Automobilio markė" id="dropdown" class="form-control">
+          <option value="acura">Acura</option>
+          <option value="alfa romeo">Alfa romeo</option>
+          <option value="audi">Audi</option>
+          <option value="bmw">BMW</option>
+          <option value="buick">Buick</option>
+          <option value="cadillac">Cadillac</option>
+          <option value="chery">Chery</option>
+          <option value="chevrolet">Chevrolet</option>
+          <option value="chrysler">Chrysler</option>
+          <option value="citroen">Citroen</option>
+          <option value="daewoo">Daewoo</option>
+          <option value="daihatsu">Daihatsu</option>
+          <option value="dodge">Dodge</option>
+          <option value="fiat">Fiat</option>
+          <option value="ford">Ford</option>
+          <option value="gaz">GAZ</option>
+          <option value="gms">GMS</option>
+          <option value="honda">Honda</option>
+          <option value="hyundai">Hyundai</option>
+          <option value="isuzu">Isuzu</option>
+          <option value="Iveco">Iveco</option>
+          <option value="jaguar">Jaguar</option>
+          <option value="jeep">Jeep</option>
+          <option value="kia">KIA</option>
+          <option value="lada">Lada</option>
+          <option value="lancia">Lancia</option>
+          <option value="land rover">Land Rover</option>
+          <option value="lexus">Lexus</option>
+          <option value="lincoln">Lincoln</option>
+          <option value="man">MAN</option>
+          <option value="maserati">Maserati</option>
+          <option value="mazda">Mazda</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="mini">Mini</option>
+          <option value="mitsubishi">Mitsubishi</option>
+          <option value="nissan">Nissan</option>
+          <option value="opel">Opel</option>
+          <option value="peugeot">Peugeot</option>
+          <option value="pontiac">Pontiac</option>
+          <option value="porsche">Porsche</option>
+          <option value="renault">Renault</option>
+          <option value="rover">Rover</option>
+          <option value="saab">Saab</option>
+          <option value="saturn">Saturn</option>
+          <option value="scania">Scania</option>
+          <option value="scion">Scion</option>
+          <option value="seat">Seat</option>
+          <option value="setra">Setra</option>
+          <option value="skoda">Skoda</option>
+          <option value="Smart">Smart</option>
+          <option value="subaru">Subaru</option>
+          <option value="suzuki">Suzuki</option>
+          <option value="tesla">Tesla</option>
+          <option value="toyota">Toyota</option>
+          <option value="vauxhall">Vauxhall</option>
+          <option value="volkswagen">Volkswagen</option>
+          <option value="volvo">Volvo</option>
+        </select>
+        </div>
+        <div class="form-group">
+   <label id="automobilio modelis" for="automobilio modelis"><strong>Įrašykite modelio pavadinimą</strong></label>
+          <input
+                 type="text"
+                 name="automobilio modelis"
+                 id="automobilio modelis"
+                 class="form-control"
+                 placeholder="Įrašykite modelį"
+                 required
+                 /></div>
+    <div class="form-group">
+      <label id="teksto-laukas" for="tekstas"><strong>Parašykite trumpai apie iškilusią problemą</strong></label>  
+      <input
+             type="text"
+             name="tekstas"
+             id="tekstas"
+             class="form-control"
+             placeholder="Jūsų tekstas"
+             required
+             />
+    </div>
+    </d>
+    <div class="form-group">
+    <p><strong>Įrašykite savo pasiūlymus anketai pagerinti</strong></p>
+          <textarea
+                    id="pasiūlymai"
+                    class="input-textarea"
+                    name="pasiūlymai"
+                    placeholder="Įrašykite savo pasiūlymus anketai pagerinti">
+    </textarea>
+    </div>
+    <div class="form-group">
+      <hr>
+       <div class="form-group">
+      <p><strong>Ar rekomenduotumėte mūsų paslaugas savo draugams?</strong></p>
+      <label>
+        <input
+          name="user-recommend"
+          value="Taip"
+          type="radio"
+          class="input-radio"
+          checked
+               /><strong>Taip</strong>
+          </label>
+         <label>
+         <input
+          name="user-recommend"
+          value="Ne"
+          type="radio"
+          class="input-radio"
+               />
+           <strong>Ne</strong>
+               </label>
+    <div class="form-group">
+      <button type="siųsti" 
+              id="submit" 
+              class="submit-button">Siųsti</button>
+    </div>
+    <hr>
+    <footer>
+    <p id="footer">Page created by <span class="span2">&#169;</span>Marius Vaitkevičius <a
+        id="tribute-link"
+        href="https://codepen.io/marius-vaitkevicius"
+        target="_blank"><span class="span1">Daugiau darbų</span></a>.</p>
+    </footer>
+    <hr>
+  </form>
+  </div>
+    
+  // CSS............................................................................................................
+  
+  @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+  --color-orange: #ffe100
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: #4c1e6e;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhoKKfCI6yJ5OM0-ORi47jBMWcnF_4KGSFmw&usqp=CAU");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+  font-family: Agency FB;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  color: var(white);
+  margin: 0;
+  background: #003C92;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhoKKfCI6yJ5OM0-ORi47jBMWcnF_4KGSFmw&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.form-group {
+  margin: 0 auto;
+  padding: 0.25rem;
+}
+#tekstas {
+  width: 50%;
+  height: 40px;
+  padding: 12px 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  background-color: white;
+  resize: none;
+}
+#title {
+  font-size: 3.5rem;
+}
+.text-center {
+  text-align: center;
+}
+
+#description {
+  font-size: 2rem;
+}
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+
+h1 {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.miestas {
+  text-align: left;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button {
+  border: none;
+}
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+.description {
+  font-style: Agency FB;
+  font-weight: 50;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+form {
+  background: linear-gradient(145deg, #00c2bf, #3333ff, #333399, #0000b3);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+    width: 100%;
+  }
+}
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-green);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.span1 {
+  color: white;
+}
+.span2 {
+  font-weight: 999;
+}
+
+        
